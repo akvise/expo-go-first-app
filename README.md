@@ -1,6 +1,15 @@
 # Expo Go - Первое iOS Приложение 📱
 
-React Native приложение с русскоязычным интерфейсом, созданное без Xcode. Демонстрирует навигацию, анимации и интерактивные элементы.
+> **React Native приложение с русскоязычным интерфейсом, созданное без Xcode**
+> 
+> Демонстрирует навигацию, анимации и интерактивные элементы. Поддерживает удаленное тестирование из любой точки мира через туннели.
+> 
+> **English**: First React Native iOS app with Russian interface. Built without Xcode with remote testing support via tunnels.
+
+[![React Native](https://img.shields.io/badge/React%20Native-0.79.6-blue.svg)](https://reactnative.dev/)
+[![Expo](https://img.shields.io/badge/Expo-SDK%2053-000020.svg)](https://expo.dev/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ## 🎯 Особенности
 
