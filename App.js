@@ -1,10 +1,29 @@
+import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity, Alert } from 'react-native';
+import HomeScreen from './screens/HomeScreen';
+import AboutScreen from './screens/AboutScreen';
+import CounterScreen from './screens/CounterScreen';
 
 export default function App() {
+  const [currentScreen, setCurrentScreen] = useState('home');
+
+  const renderScreen = () => {
+    switch (currentScreen) {
+      case 'home':
+        return <HomeScreen onNavigate={setCurrentScreen} />;
+      case 'about':
+        return <AboutScreen onNavigate={setCurrentScreen} />;
+      case 'counter':
+        return <CounterScreen onNavigate={setCurrentScreen} />;
+      default:
+        return <HomeScreen onNavigate={setCurrentScreen} />;
+    }
+  };
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      {renderScreen()}
       <StatusBar style="auto" />
     </View>
   );
@@ -13,8 +32,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#f5f5f5',
   },
 });
